@@ -1,0 +1,35 @@
+type Query{
+ 
+  getCustomerRates(zipCode:Int):[CdRatesDTO]
+  getManagerRates(zipCode:Int):[CdManagerRatesDTO]
+  getCustomerHistoryRates(zipCode:Int):[CdHistoryRatesDTO]
+  getManagerHistoryRates(zipCode:Int):[CdManagerHistoryRatesDTO]
+}
+ 
+type CdRatesDTO{
+termLength:Int
+intrstRate:Float
+minDepositOpen:Int
+maxDepositPermit:Int
+}
+ 
+type CdManagerRatesDTO{
+  termLength:Int
+  managerIntrstRate:Float
+  minDepositOpen:Int
+  maxDepositPermit:Int
+}
+ 
+type CdHistoryRatesDTO{
+  termLength:Int
+  historyIntrstRate:Float
+  minDepositOpen:Int
+  maxDepositPermit:Int
+}
+ 
+type CdManagerHistoryRatesDTO{
+  termLength:Int
+  managerHistoryIntrstRate:Float
+  minDepositOpen:Int
+  maxDepositPermit:Int
+}
