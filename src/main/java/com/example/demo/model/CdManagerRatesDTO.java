@@ -6,6 +6,7 @@ public class CdManagerRatesDTO {
 	private Double managerIntrstRate;
 	private Integer minDepositOpen;
 	private Integer maxDepositPermit;
+	
 	public Integer getTermLength() {
 		return termLength;
 	}
